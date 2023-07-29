@@ -1,0 +1,1628 @@
+back/bytecode.c:301:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: unknown\n", code->addr);
+    ^
+back/bytecode.c:306:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: int %d\n", code->addr, code->int_t.value);
+    ^
+back/bytecode.c:311:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: long %lld\n", code->addr, code->long_t.value);
+    ^
+back/bytecode.c:316:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: float %f\n", code->addr, code->float_t.value);
+    ^
+back/bytecode.c:321:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: double %lf\n", code->addr, code->double_t.value);
+    ^
+back/bytecode.c:326:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: char %c\n", code->addr, code->char_t.value);
+    ^
+back/bytecode.c:331:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: string %u\n", code->addr, code->string.index);
+    ^
+back/bytecode.c:336:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: c_null\n", code->addr);
+    ^
+back/bytecode.c:341:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: id top %d\n", code->addr, code->id_top.index);
+    ^
+back/bytecode.c:346:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: id local %d %d\n", code->addr, code->id_local.stack_level,
+    ^
+back/bytecode.c:352:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: id dim local %d %d %d\n", code->addr,
+    ^
+back/bytecode.c:359:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: id dim slice %d %d %d\n", code->addr,
+    ^
+back/bytecode.c:366:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: id global %d\n", code->addr, code->id_global.index);
+    ^
+back/bytecode.c:371:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: id func func %d\n", code->addr, code->id_func.func_value ? code->id_func.func_value->addr : 0);
+    ^
+back/bytecode.c:376:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: id func addr %d\n", code->addr, code->id_func.func_addr);
+    ^
+back/bytecode.c:376:5: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: id func addr %d\n", code->addr, code->id_func.func_addr);
+    ^
+back/bytecode.c:381:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: id func entry\n", code->addr);
+    ^
+back/bytecode.c:386:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op neg int\n", code->addr);
+    ^
+back/bytecode.c:391:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op add int\n", code->addr);
+    ^
+back/bytecode.c:396:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op sub int\n", code->addr);
+    ^
+back/bytecode.c:401:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op mul int\n", code->addr);
+    ^
+back/bytecode.c:406:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op div int\n", code->addr);
+    ^
+back/bytecode.c:411:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op mod int\n", code->addr);
+    ^
+back/bytecode.c:416:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op neg long\n", code->addr);
+    ^
+back/bytecode.c:421:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op add long\n", code->addr);
+    ^
+back/bytecode.c:426:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op sub long\n", code->addr);
+    ^
+back/bytecode.c:431:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op mul long\n", code->addr);
+    ^
+back/bytecode.c:436:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op div long\n", code->addr);
+    ^
+back/bytecode.c:441:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op mod long\n", code->addr);
+    ^
+back/bytecode.c:446:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op neg float\n", code->addr);
+    ^
+back/bytecode.c:451:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op add float\n", code->addr);
+    ^
+back/bytecode.c:456:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op sub float\n", code->addr);
+    ^
+back/bytecode.c:461:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op mul float\n", code->addr);
+    ^
+back/bytecode.c:466:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op div float\n", code->addr);
+    ^
+back/bytecode.c:471:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op neg double\n", code->addr);
+    ^
+back/bytecode.c:476:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op add double\n", code->addr);
+    ^
+back/bytecode.c:481:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op sub double\n", code->addr);
+    ^
+back/bytecode.c:486:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op mul double\n", code->addr);
+    ^
+back/bytecode.c:491:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op div double\n", code->addr);
+    ^
+back/bytecode.c:496:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op add string\n", code->addr);
+    ^
+back/bytecode.c:501:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op add int string\n", code->addr);
+    ^
+back/bytecode.c:506:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op add string int\n", code->addr);
+    ^
+back/bytecode.c:511:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op add long string\n", code->addr);
+    ^
+back/bytecode.c:516:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op add string long\n", code->addr);
+    ^
+back/bytecode.c:521:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op add float string\n", code->addr);
+    ^
+back/bytecode.c:526:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op add string float\n", code->addr);
+    ^
+back/bytecode.c:531:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op add double string\n", code->addr);
+    ^
+back/bytecode.c:536:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op add string double\n", code->addr);
+    ^
+back/bytecode.c:541:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op add char string\n", code->addr);
+    ^
+back/bytecode.c:546:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op add string char\n", code->addr);
+    ^
+back/bytecode.c:551:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op lt int\n", code->addr);
+    ^
+back/bytecode.c:556:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op gt int\n", code->addr);
+    ^
+back/bytecode.c:561:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op lte int\n", code->addr);
+    ^
+back/bytecode.c:566:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op gte int\n", code->addr);
+    ^
+back/bytecode.c:571:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op eq int\n", code->addr);
+    ^
+back/bytecode.c:576:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op neq int\n", code->addr);
+    ^
+back/bytecode.c:581:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op lt long\n", code->addr);
+    ^
+back/bytecode.c:586:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op gt long\n", code->addr);
+    ^
+back/bytecode.c:591:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op lte long\n", code->addr);
+    ^
+back/bytecode.c:596:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op gte long\n", code->addr);
+    ^
+back/bytecode.c:601:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op eq long\n", code->addr);
+    ^
+back/bytecode.c:606:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op neq long\n", code->addr);
+    ^
+back/bytecode.c:611:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op lt float\n", code->addr);
+    ^
+back/bytecode.c:616:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op gt float\n", code->addr);
+    ^
+back/bytecode.c:621:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op lte float\n", code->addr);
+    ^
+back/bytecode.c:626:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op gte float\n", code->addr);
+    ^
+back/bytecode.c:631:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op eq float\n", code->addr);
+    ^
+back/bytecode.c:636:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op neq float\n", code->addr);
+    ^
+back/bytecode.c:641:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op lt double\n", code->addr);
+    ^
+back/bytecode.c:646:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op gt double\n", code->addr);
+    ^
+back/bytecode.c:651:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op lte double\n", code->addr);
+    ^
+back/bytecode.c:656:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op gte double\n", code->addr);
+    ^
+back/bytecode.c:661:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op eq double\n", code->addr);
+    ^
+back/bytecode.c:666:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op neq double\n", code->addr);
+    ^
+back/bytecode.c:671:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op lt char\n", code->addr);
+    ^
+back/bytecode.c:676:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op gt char\n", code->addr);
+    ^
+back/bytecode.c:681:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op lte char\n", code->addr);
+    ^
+back/bytecode.c:686:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op gte char\n", code->addr);
+    ^
+back/bytecode.c:691:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op eq char\n", code->addr);
+    ^
+back/bytecode.c:696:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op neq char\n", code->addr);
+    ^
+back/bytecode.c:701:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op eq string\n", code->addr);
+    ^
+back/bytecode.c:706:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op neq string\n", code->addr);
+    ^
+back/bytecode.c:711:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op eq c_ptr\n", code->addr);
+    ^
+back/bytecode.c:716:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op neq c_ptr\n", code->addr);
+    ^
+back/bytecode.c:721:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op eq nil\n", code->addr);
+    ^
+back/bytecode.c:726:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op eq string nil\n", code->addr);
+    ^
+back/bytecode.c:731:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op eq array nil\n", code->addr);
+    ^
+back/bytecode.c:736:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op eq record nil\n", code->addr);
+    ^
+back/bytecode.c:741:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op eq func nil\n", code->addr);
+    ^
+back/bytecode.c:746:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op eq nil string\n", code->addr);
+    ^
+back/bytecode.c:751:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op eq nil array\n", code->addr);
+    ^
+back/bytecode.c:756:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op eq nil record\n", code->addr);
+    ^
+back/bytecode.c:761:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op eq nil func\n", code->addr);
+    ^
+back/bytecode.c:766:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op neq nil\n", code->addr);
+    ^
+back/bytecode.c:771:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op neq string nil\n", code->addr);
+    ^
+back/bytecode.c:776:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op neq array nil\n", code->addr);
+    ^
+back/bytecode.c:781:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op neq record nil\n", code->addr);
+    ^
+back/bytecode.c:786:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op neq func nil\n", code->addr);
+    ^
+back/bytecode.c:791:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op neq nil string\n", code->addr);
+    ^
+back/bytecode.c:796:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op neq nil array\n", code->addr);
+    ^
+back/bytecode.c:801:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op neq nil record\n", code->addr);
+    ^
+back/bytecode.c:806:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op neq nil func\n", code->addr);
+    ^
+back/bytecode.c:811:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op not\n", code->addr);
+    ^
+back/bytecode.c:816:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op bin not int\n", code->addr);
+    ^
+back/bytecode.c:821:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op bin and int\n", code->addr);
+    ^
+back/bytecode.c:826:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op bin or int\n", code->addr);
+    ^
+back/bytecode.c:831:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op bin xor int\n", code->addr);
+    ^
+back/bytecode.c:836:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op bin shl int\n", code->addr);
+    ^
+back/bytecode.c:841:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op bin shr int\n", code->addr);
+    ^
+back/bytecode.c:846:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op bin not long\n", code->addr);
+    ^
+back/bytecode.c:851:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op bin and long\n", code->addr);
+    ^
+back/bytecode.c:856:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op bin or long\n", code->addr);
+    ^
+back/bytecode.c:861:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op bin xor long\n", code->addr);
+    ^
+back/bytecode.c:866:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op bin shl long\n", code->addr);
+    ^
+back/bytecode.c:871:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op bin shr long\n", code->addr);
+    ^
+back/bytecode.c:876:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op inc int %d %d\n", code->addr,
+    ^
+back/bytecode.c:883:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op dec int %d %d\n", code->addr,
+    ^
+back/bytecode.c:890:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op dup int %d %d\n", code->addr,
+    ^
+back/bytecode.c:897:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: int to long\n", code->addr);
+    ^
+back/bytecode.c:902:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: int to float\n", code->addr);
+    ^
+back/bytecode.c:907:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: int to double\n", code->addr);
+    ^
+back/bytecode.c:912:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: long to int\n", code->addr);
+    ^
+back/bytecode.c:917:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: long to float\n", code->addr);
+    ^
+back/bytecode.c:922:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: long to double\n", code->addr);
+    ^
+back/bytecode.c:927:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: float to int\n", code->addr);
+    ^
+back/bytecode.c:932:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: float to long\n", code->addr);
+    ^
+back/bytecode.c:937:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: float to double\n", code->addr);
+    ^
+back/bytecode.c:942:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: double to int\n", code->addr);
+    ^
+back/bytecode.c:947:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: double to long\n", code->addr);
+    ^
+back/bytecode.c:952:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: double to float\n", code->addr);
+    ^
+back/bytecode.c:957:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: enumtype record to int\n", code->addr);
+    ^
+back/bytecode.c:962:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op neg arr int\n", code->addr);
+    ^
+back/bytecode.c:967:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op neg arr long\n", code->addr);
+    ^
+back/bytecode.c:972:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op neg arr float\n", code->addr);
+    ^
+back/bytecode.c:977:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op neg arr double\n", code->addr);
+    ^
+back/bytecode.c:982:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op add arr int\n", code->addr);
+    ^
+back/bytecode.c:987:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op add arr long\n", code->addr);
+    ^
+back/bytecode.c:992:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op add arr float\n", code->addr);
+    ^
+back/bytecode.c:997:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op add arr double\n", code->addr);
+    ^
+back/bytecode.c:1002:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op sub arr int\n", code->addr);
+    ^
+back/bytecode.c:1007:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op sub arr long\n", code->addr);
+    ^
+back/bytecode.c:1012:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op sub arr float\n", code->addr);
+    ^
+back/bytecode.c:1017:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op sub arr double\n", code->addr);
+    ^
+back/bytecode.c:1022:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op mul arr int\n", code->addr);
+    ^
+back/bytecode.c:1027:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op mul arr long\n", code->addr);
+    ^
+back/bytecode.c:1032:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op mul arr float\n", code->addr);
+    ^
+back/bytecode.c:1037:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op mul arr double\n", code->addr);
+    ^
+back/bytecode.c:1042:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op mul arr arr int\n", code->addr);
+    ^
+back/bytecode.c:1047:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op mul arr arr long\n", code->addr);
+    ^
+back/bytecode.c:1052:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op mul arr arr float\n", code->addr);
+    ^
+back/bytecode.c:1057:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op mul arr arr double\n", code->addr);
+    ^
+back/bytecode.c:1062:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op ass int\n", code->addr);
+    ^
+back/bytecode.c:1067:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op ass long\n", code->addr);
+    ^
+back/bytecode.c:1072:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op ass float\n", code->addr);
+    ^
+back/bytecode.c:1077:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op ass double\n", code->addr);
+    ^
+back/bytecode.c:1082:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op ass char\n", code->addr);
+    ^
+back/bytecode.c:1087:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op ass string\n", code->addr);
+    ^
+back/bytecode.c:1092:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op ass c_ptr\n", code->addr);
+    ^
+back/bytecode.c:1097:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op ass array\n", code->addr);
+    ^
+back/bytecode.c:1102:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op ass record\n", code->addr);
+    ^
+back/bytecode.c:1107:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op ass func\n", code->addr);
+    ^
+back/bytecode.c:1112:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: op ass record nil\n", code->addr);
+    ^
+back/bytecode.c:1117:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: jumpz %d (%d)\n", code->addr, code->jump.offset,
+    ^
+back/bytecode.c:1117:5: warning: %d in format string (no. 3) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: jumpz %d (%d)\n", code->addr, code->jump.offset,
+    ^
+back/bytecode.c:1123:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: jump %d (%d)\n", code->addr, code->jump.offset,
+    ^
+back/bytecode.c:1123:5: warning: %d in format string (no. 3) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: jump %d (%d)\n", code->addr, code->jump.offset,
+    ^
+back/bytecode.c:1129:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: label\n", code->addr);
+    ^
+back/bytecode.c:1134:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: mk array int %d\n", code->addr, code->mk_array.dims);
+    ^
+back/bytecode.c:1134:5: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: mk array int %d\n", code->addr, code->mk_array.dims);
+    ^
+back/bytecode.c:1139:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: mk array long %d\n", code->addr, code->mk_array.dims);
+    ^
+back/bytecode.c:1139:5: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: mk array long %d\n", code->addr, code->mk_array.dims);
+    ^
+back/bytecode.c:1144:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: mk array float %d\n", code->addr, code->mk_array.dims);
+    ^
+back/bytecode.c:1144:5: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: mk array float %d\n", code->addr, code->mk_array.dims);
+    ^
+back/bytecode.c:1149:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: mk array double %d\n", code->addr, code->mk_array.dims);
+    ^
+back/bytecode.c:1149:5: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: mk array double %d\n", code->addr, code->mk_array.dims);
+    ^
+back/bytecode.c:1154:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: mk array char %d\n", code->addr, code->mk_array.dims);
+    ^
+back/bytecode.c:1154:5: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: mk array char %d\n", code->addr, code->mk_array.dims);
+    ^
+back/bytecode.c:1159:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: mk array string %d\n", code->addr, code->mk_array.dims);
+    ^
+back/bytecode.c:1159:5: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: mk array string %d\n", code->addr, code->mk_array.dims);
+    ^
+back/bytecode.c:1164:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: mk array array %d\n", code->addr, code->mk_array.dims);
+    ^
+back/bytecode.c:1164:5: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: mk array array %d\n", code->addr, code->mk_array.dims);
+    ^
+back/bytecode.c:1169:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: mk array record %d\n", code->addr, code->mk_array.dims);
+    ^
+back/bytecode.c:1169:5: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: mk array record %d\n", code->addr, code->mk_array.dims);
+    ^
+back/bytecode.c:1174:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: mk array func %d\n", code->addr, code->mk_array.dims);
+    ^
+back/bytecode.c:1174:5: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: mk array func %d\n", code->addr, code->mk_array.dims);
+    ^
+back/bytecode.c:1179:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: mk init array %d\n", code->addr, code->mk_array.dims);
+    ^
+back/bytecode.c:1179:5: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: mk init array %d\n", code->addr, code->mk_array.dims);
+    ^
+back/bytecode.c:1184:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: mk range %u\n", code->addr, code->mk_range.dims);
+    ^
+back/bytecode.c:1189:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: slice array %u\n", code->addr, code->mk_slice.dims);
+    ^
+back/bytecode.c:1194:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: slice range %u\n", code->addr, code->mk_slice.dims);
+    ^
+back/bytecode.c:1199:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: slice slice %u\n", code->addr, code->mk_slice.dims);
+    ^
+back/bytecode.c:1204:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: slice string %u\n", code->addr, code->mk_slice.dims);
+    ^
+back/bytecode.c:1209:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: array deref %d\n", code->addr, code->array_deref.dims);
+    ^
+back/bytecode.c:1209:5: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: array deref %d\n", code->addr, code->array_deref.dims);
+    ^
+back/bytecode.c:1214:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: array deref %d\n", code->addr, code->array_deref.dims);
+    ^
+back/bytecode.c:1214:5: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: array deref %d\n", code->addr, code->array_deref.dims);
+    ^
+back/bytecode.c:1219:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: range deref %d\n", code->addr, code->array_deref.dims);
+    ^
+back/bytecode.c:1219:5: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: range deref %d\n", code->addr, code->array_deref.dims);
+    ^
+back/bytecode.c:1224:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: slice deref %d\n", code->addr, code->array_deref.dims);
+    ^
+back/bytecode.c:1224:5: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: slice deref %d\n", code->addr, code->array_deref.dims);
+    ^
+back/bytecode.c:1229:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: string deref\n", code->addr);
+    ^
+back/bytecode.c:1234:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: array append %d %d\n", code->addr,
+    ^
+back/bytecode.c:1241:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: record count %u\n", code->addr, code->record.count);
+    ^
+back/bytecode.c:1246:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: vec index %d %u\n", code->addr, code->attr.stack_level, code->attr.index);
+    ^
+back/bytecode.c:1251:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: vecref index\n", code->addr);
+    ^
+back/bytecode.c:1256:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: vecref vec index %d %u\n", code->addr, code->attr.stack_level, code->attr.index);
+    ^
+back/bytecode.c:1261:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: vecref vec index\n", code->addr);
+    ^
+back/bytecode.c:1266:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: nil record ref\n", code->addr);
+    ^
+back/bytecode.c:1271:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: record unpack %u\n", code->addr, code->record.count);
+    ^
+back/bytecode.c:1276:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("\n%d: func def\n", code->addr);
+    ^
+back/bytecode.c:1281:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: func obj\n", code->addr);
+    ^
+back/bytecode.c:1286:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: func ffi %d %d %d\n", code->addr, code->ffi.count,
+    ^
+back/bytecode.c:1286:5: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: func ffi %d %d %d\n", code->addr, code->ffi.count,
+    ^
+back/bytecode.c:1286:5: warning: %d in format string (no. 3) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: func ffi %d %d %d\n", code->addr, code->ffi.count,
+    ^
+back/bytecode.c:1286:5: warning: %d in format string (no. 4) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: func ffi %d %d %d\n", code->addr, code->ffi.count,
+    ^
+back/bytecode.c:1292:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: ffi bool\n", code->addr);
+    ^
+back/bytecode.c:1297:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: ffi int\n", code->addr);
+    ^
+back/bytecode.c:1302:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: ffi long\n", code->addr);
+    ^
+back/bytecode.c:1307:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: ffi float\n", code->addr);
+    ^
+back/bytecode.c:1312:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: ffi double\n", code->addr);
+    ^
+back/bytecode.c:1317:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: ffi char\n", code->addr);
+    ^
+back/bytecode.c:1322:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: ffi string\n", code->addr);
+    ^
+back/bytecode.c:1327:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: ffi void\n", code->addr);
+    ^
+back/bytecode.c:1332:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: ffi c_ptr\n", code->addr);
+    ^
+back/bytecode.c:1337:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: ffi record %u %u\n", code->addr, code->ffi_record.count, code->ffi_record.total_count);
+    ^
+back/bytecode.c:1342:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: dup %u\n", code->addr, code->dup.n);
+    ^
+back/bytecode.c:1347:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: global vec %d\n", code->addr, code->global_vec.count);
+    ^
+back/bytecode.c:1347:5: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: global vec %d\n", code->addr, code->global_vec.count);
+    ^
+back/bytecode.c:1352:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: mark %u\n", code->addr, code->mark.addr);
+    ^
+back/bytecode.c:1355:45: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+void bytecode_print_call(bytecode * code) { printf("%d: call\n", code->addr); }
+                                            ^
+back/bytecode.c:1359:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: slide %u %u\n", code->addr, code->slide.q, code->slide.m);
+    ^
+back/bytecode.c:1364:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: clear stack\n", code->addr);
+    ^
+back/bytecode.c:1369:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: ret %d\n", code->addr, code->clear.count);
+    ^
+back/bytecode.c:1369:5: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: ret %d\n", code->addr, code->clear.count);
+    ^
+back/bytecode.c:1374:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: line %u\n", code->addr, code->line.no);
+    ^
+back/bytecode.c:1379:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: build in id %u\n", code->addr, code->build_in.id);
+    ^
+back/bytecode.c:1384:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: copyglob\n", code->addr);
+    ^
+back/bytecode.c:1389:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: alloc %u\n", code->addr, code->alloc.n);
+    ^
+back/bytecode.c:1394:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: rewrite %u\n", code->addr, code->rewrite.j);
+    ^
+back/bytecode.c:1399:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: push param\n", code->addr);
+    ^
+back/bytecode.c:1404:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: push except\n", code->addr);
+    ^
+back/bytecode.c:1409:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: rethrow\n", code->addr);
+    ^
+back/bytecode.c:1414:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    printf("%d: unhandled exception\n", code->addr);
+    ^
+back/bytecode.c:1417:45: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+void bytecode_print_halt(bytecode * code) { printf("%d: halt\n", code->addr); }
+                                            ^
+back/bytecode.c:1484:20: style: Local variable 'code' shadows outer argument [shadowArgument]
+        bytecode * code = &node->value;
+                   ^
+back/bytecode.c:1479:41: note: Shadowed declaration
+void bytecode_func_addr(bytecode_list * code)
+                                        ^
+back/bytecode.c:1484:20: note: Shadow variable
+        bytecode * code = &node->value;
+                   ^
+back/bytecode.c:1510:20: style: Local variable 'code' shadows outer argument [shadowArgument]
+        bytecode * code = &node->value;
+                   ^
+back/bytecode.c:1502:42: note: Shadowed declaration
+void bytecode_list_print(bytecode_list * code)
+                                         ^
+back/bytecode.c:1510:20: note: Shadow variable
+        bytecode * code = &node->value;
+                   ^
+back/fficall.c:155:53: warning:inconclusive: Possible null pointer dereference: libname [nullPointer]
+        fprintf(stderr, "cannot open library %s\n", libname);
+                                                    ^
+back/fficall.c:149:19: note: Assignment 'libname=NULL', assigned value is 0
+        libname = NULL;
+                  ^
+back/fficall.c:155:53: note: Null pointer dereference
+        fprintf(stderr, "cannot open library %s\n", libname);
+                                                    ^
+back/gc.c:252:40: style:inconclusive: Function 'gc_run' argument 2 names different: declaration 'omfalos' definition 'stack'. [funcArgNamesDifferent]
+void gc_run(gc * collector, gc_stack * stack, int stack_size,
+                                       ^
+back/gc.h:72:40: note: Function 'gc_run' argument 2 names different: declaration 'omfalos' definition 'stack'.
+void gc_run(gc * collector, gc_stack * omfalos, int stack_size,
+                                       ^
+back/gc.c:252:40: note: Function 'gc_run' argument 2 names different: declaration 'omfalos' definition 'stack'.
+void gc_run(gc * collector, gc_stack * stack, int stack_size,
+                                       ^
+back/libvm.c:144:11: warning: Redundant assignment of 'r' to itself. [selfAssignment]
+        r = r;
+          ^
+back/libvm.c:144:11: style: Variable 'r' is assigned a value that is never used. [unreadVariable]
+        r = r;
+          ^
+back/nev.c:234:9: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+        fprintf(stderr, "too few parameters, expected %d got %d\n",
+        ^
+back/object.c:428:9: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+        printf("arr->dv[%d].elems %d\n", d, value->dv[d].elems);
+        ^
+back/object.c:429:9: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+        printf("arr->dv[%d].mult %d\n", d, value->dv[d].mult);
+        ^
+back/vm.c:72:15: style: Variable 'ip' is assigned a value that is never used. [unreadVariable]
+    ip_ptr ip = { 0 };
+              ^
+back/vm.c:73:17: style: Variable 'line' is assigned a value that is never used. [unreadVariable]
+    ip_ptr line = { 0 };
+                ^
+back/vmexec.c:2668:12: style: Redundant initialization for 'i'. The initialized value is overwritten before it is read. [redundantInitialization]
+    for (i = size; i > 0; i--)
+           ^
+back/vmexec.c:2667:20: note: i is initialized
+    unsigned int i = size;
+                   ^
+back/vmexec.c:2668:12: note: i is overwritten
+    for (i = size; i > 0; i--)
+           ^
+back/vmffi.c:161:18: portability: Casting between signed char * and float * which have an incompatible binary data representation. [invalidPointerCast]
+                *(float *)((char *)data + *offset) = *float_value;
+                 ^
+back/vmffi.c:171:18: portability: Casting between signed char * and double * which have an incompatible binary data representation. [invalidPointerCast]
+                *(double *)((char *)data + *offset) = *double_value;
+                 ^
+back/vmffi.c:298:38: portability: Casting between signed char * and float * which have an incompatible binary data representation. [invalidPointerCast]
+                float float_value = *(float *)((char *)data + *offset);
+                                     ^
+back/vmffi.c:310:40: portability: Casting between signed char * and double * which have an incompatible binary data representation. [invalidPointerCast]
+                double double_value = *(double *)((char *)data + *offset);
+                                       ^
+back/vmffi.c:217:25: style: Local variable 'rec_addr' shadows outer argument [shadowArgument]
+                mem_ptr rec_addr = gc_get_vec_ref(machine->collector, rec_ref_addr);
+                        ^
+back/vmffi.c:114:67: note: Shadowed declaration
+static int vm_execute_func_ffi_record_value(vm * machine, mem_ptr rec_addr, unsigned int count,
+                                                                  ^
+back/vmffi.c:217:25: note: Shadow variable
+                mem_ptr rec_addr = gc_get_vec_ref(machine->collector, rec_ref_addr);
+                        ^
+back/vmffi.c:357:30: style: Local variable 'rec_offset' shadows outer variable [shadowVariable]
+                unsigned int rec_offset = 0;
+                             ^
+back/vmffi.c:246:18: note: Shadowed declaration
+    unsigned int rec_offset = 0;
+                 ^
+back/vmffi.c:357:30: note: Shadow variable
+                unsigned int rec_offset = 0;
+                             ^
+front/array.c:108:16: style: Local variable 'value' shadows outer argument [shadowArgument]
+        expr * value = head->value;
+               ^
+front/array.c:98:32: note: Shadowed declaration
+int array_to_depth_list(expr * value, expr_list_weak * depth_list)
+                               ^
+front/array.c:108:16: note: Shadow variable
+        expr * value = head->value;
+               ^
+front/dim.c:56:43: style:inconclusive: Function 'dim_list_node_delete' argument 1 names different: declaration 'value' definition 'node'. [funcArgNamesDifferent]
+void dim_list_node_delete(dim_list_node * node)
+                                          ^
+front/dim.h:49:43: note: Function 'dim_list_node_delete' argument 1 names different: declaration 'value' definition 'node'.
+void dim_list_node_delete(dim_list_node * value);
+                                          ^
+front/dim.c:56:43: note: Function 'dim_list_node_delete' argument 1 names different: declaration 'value' definition 'node'.
+void dim_list_node_delete(dim_list_node * node)
+                                          ^
+front/dim.c:76:33: style:inconclusive: Function 'dim_list_delete' argument 1 names different: declaration 'value' definition 'list'. [funcArgNamesDifferent]
+void dim_list_delete(dim_list * list)
+                                ^
+front/dim.h:52:33: note: Function 'dim_list_delete' argument 1 names different: declaration 'value' definition 'list'.
+void dim_list_delete(dim_list * value);
+                                ^
+front/dim.c:76:33: note: Function 'dim_list_delete' argument 1 names different: declaration 'value' definition 'list'.
+void dim_list_delete(dim_list * list)
+                                ^
+front/emit.c:2861:34: warning: Redundant assignment of 'node' to itself. [selfAssignment]
+    match_guard_list_node * node = node = list->tail;
+                                 ^
+front/emit.c:4905:9: style: The scope of the variable 'stack_level' can be reduced. [variableScope]
+    int stack_level = 0;
+        ^
+front/emit.c:5154:20: style:inconclusive: Function 'use_emit' argument 1 names different: declaration 'value' definition 'use_value'. [funcArgNamesDifferent]
+int use_emit(use * use_value, int * stack_level, module * module_value, func_list_weak * list_weak, int * result)
+                   ^
+front/emit.h:297:20: note: Function 'use_emit' argument 1 names different: declaration 'value' definition 'use_value'.
+int use_emit(use * value, int * stack_level, module * module_value, func_list_weak * list_weak, int * result);
+                   ^
+front/emit.c:5154:20: note: Function 'use_emit' argument 1 names different: declaration 'value' definition 'use_value'.
+int use_emit(use * use_value, int * stack_level, module * module_value, func_list_weak * list_weak, int * result)
+                   ^
+front/enumred.c:58:29: warning: Either the condition 'enumerator_value->expr_value!=NULL' is redundant or there is possible null pointer dereference: enumerator_value->expr_value. [nullPointerRedundantCheck]
+        if (enumerator_value->expr_value->type == EXPR_INT)
+                            ^
+front/enumred.c:51:42: note: Assuming that condition 'enumerator_value->expr_value!=NULL' is not redundant
+        if (enumerator_value->expr_value != NULL)
+                                         ^
+front/enumred.c:58:29: note: Null pointer dereference
+        if (enumerator_value->expr_value->type == EXPR_INT)
+                            ^
+front/expr.c:192:38: style:inconclusive: Function 'expr_new_one' argument 2 names different: declaration 'expr_left' definition 'left'. [funcArgNamesDifferent]
+expr * expr_new_one(int type, expr * left)
+                                     ^
+front/expr.h:368:38: note: Function 'expr_new_one' argument 2 names different: declaration 'expr_left' definition 'left'.
+expr * expr_new_one(int type, expr * expr_left);
+                                     ^
+front/expr.c:192:38: note: Function 'expr_new_one' argument 2 names different: declaration 'expr_left' definition 'left'.
+expr * expr_new_one(int type, expr * left)
+                                     ^
+front/expr.c:208:38: style:inconclusive: Function 'expr_new_two' argument 2 names different: declaration 'expr_left' definition 'left'. [funcArgNamesDifferent]
+expr * expr_new_two(int type, expr * left, expr * right)
+                                     ^
+front/expr.h:369:38: note: Function 'expr_new_two' argument 2 names different: declaration 'expr_left' definition 'left'.
+expr * expr_new_two(int type, expr * expr_left, expr * expr_right);
+                                     ^
+front/expr.c:208:38: note: Function 'expr_new_two' argument 2 names different: declaration 'expr_left' definition 'left'.
+expr * expr_new_two(int type, expr * left, expr * right)
+                                     ^
+front/expr.c:208:51: style:inconclusive: Function 'expr_new_two' argument 3 names different: declaration 'expr_right' definition 'right'. [funcArgNamesDifferent]
+expr * expr_new_two(int type, expr * left, expr * right)
+                                                  ^
+front/expr.h:369:56: note: Function 'expr_new_two' argument 3 names different: declaration 'expr_right' definition 'right'.
+expr * expr_new_two(int type, expr * expr_left, expr * expr_right);
+                                                       ^
+front/expr.c:208:51: note: Function 'expr_new_two' argument 3 names different: declaration 'expr_right' definition 'right'.
+expr * expr_new_two(int type, expr * left, expr * right)
+                                                  ^
+front/expr.c:224:40: style:inconclusive: Function 'expr_new_three' argument 2 names different: declaration 'expr_left' definition 'left'. [funcArgNamesDifferent]
+expr * expr_new_three(int type, expr * left, expr * middle, expr * right)
+                                       ^
+front/expr.h:370:40: note: Function 'expr_new_three' argument 2 names different: declaration 'expr_left' definition 'left'.
+expr * expr_new_three(int type, expr * expr_left, expr * expr_middle,
+                                       ^
+front/expr.c:224:40: note: Function 'expr_new_three' argument 2 names different: declaration 'expr_left' definition 'left'.
+expr * expr_new_three(int type, expr * left, expr * middle, expr * right)
+                                       ^
+front/expr.c:224:53: style:inconclusive: Function 'expr_new_three' argument 3 names different: declaration 'expr_middle' definition 'middle'. [funcArgNamesDifferent]
+expr * expr_new_three(int type, expr * left, expr * middle, expr * right)
+                                                    ^
+front/expr.h:370:58: note: Function 'expr_new_three' argument 3 names different: declaration 'expr_middle' definition 'middle'.
+expr * expr_new_three(int type, expr * expr_left, expr * expr_middle,
+                                                         ^
+front/expr.c:224:53: note: Function 'expr_new_three' argument 3 names different: declaration 'expr_middle' definition 'middle'.
+expr * expr_new_three(int type, expr * left, expr * middle, expr * right)
+                                                    ^
+front/expr.c:224:68: style:inconclusive: Function 'expr_new_three' argument 4 names different: declaration 'expr_right' definition 'right'. [funcArgNamesDifferent]
+expr * expr_new_three(int type, expr * left, expr * middle, expr * right)
+                                                                   ^
+front/expr.h:371:30: note: Function 'expr_new_three' argument 4 names different: declaration 'expr_right' definition 'right'.
+                      expr * expr_right);
+                             ^
+front/expr.c:224:68: note: Function 'expr_new_three' argument 4 names different: declaration 'expr_right' definition 'right'.
+expr * expr_new_three(int type, expr * left, expr * middle, expr * right)
+                                                                   ^
+front/gencode.c:90:21: style: Condition 'sup_func_value' is always true [knownConditionTrueFalse]
+                if (sup_func_value)
+                    ^
+front/gencode.c:87:35: note: Assuming that condition 'entry->func_value!=NULL' is not redundant
+            if (entry->func_value != NULL)
+                                  ^
+front/gencode.c:89:46: note: Assignment 'sup_func_value=entry->func_value', assigned value is 0
+                func * sup_func_value = entry->func_value;
+                                             ^
+front/gencode.c:90:21: note: Condition 'sup_func_value' is always true
+                if (sup_func_value)
+                    ^
+front/gencode.c:76:73: style:inconclusive: Function 'expr_id_gencode' argument 3 names different: declaration 'tab' definition 'stab'. [funcArgNamesDifferent]
+int expr_id_gencode(unsigned int syn_level, func * func_value, symtab * stab,
+                                                                        ^
+front/gencode.h:40:73: note: Function 'expr_id_gencode' argument 3 names different: declaration 'tab' definition 'stab'.
+int expr_id_gencode(unsigned int syn_level, func * func_value, symtab * tab,
+                                                                        ^
+front/gencode.c:76:73: note: Function 'expr_id_gencode' argument 3 names different: declaration 'tab' definition 'stab'.
+int expr_id_gencode(unsigned int syn_level, func * func_value, symtab * stab,
+                                                                        ^
+front/optimize.c:31:40: style:inconclusive: Function 'module_decl_optimize' argument 1 names different: declaration 'value' definition 'module_nev'. [funcArgNamesDifferent]
+int module_decl_optimize(module_decl * module_nev)
+                                       ^
+front/optimize.h:28:40: note: Function 'module_decl_optimize' argument 1 names different: declaration 'value' definition 'module_nev'.
+int module_decl_optimize(module_decl * value);
+                                       ^
+front/optimize.c:31:40: note: Function 'module_decl_optimize' argument 1 names different: declaration 'value' definition 'module_nev'.
+int module_decl_optimize(module_decl * module_nev)
+                                       ^
+front/record.c:28:45: style:inconclusive: Function 'record_new' argument 2 names different: declaration 'list' definition 'params'. [funcArgNamesDifferent]
+record * record_new(char * id, param_list * params)
+                                            ^
+front/record.h:38:45: note: Function 'record_new' argument 2 names different: declaration 'list' definition 'params'.
+record * record_new(char * id, param_list * list);
+                                            ^
+front/record.c:28:45: note: Function 'record_new' argument 2 names different: declaration 'list' definition 'params'.
+record * record_new(char * id, param_list * params)
+                                            ^
+front/record.c:59:36: style:inconclusive: Function 'record_find_param' argument 1 names different: declaration 'value' definition 'record_value'. [funcArgNamesDifferent]
+param * record_find_param(record * record_value, char * id)
+                                   ^
+front/record.h:41:36: note: Function 'record_find_param' argument 1 names different: declaration 'value' definition 'record_value'.
+param * record_find_param(record * value, char * id);
+                                   ^
+front/record.c:59:36: note: Function 'record_find_param' argument 1 names different: declaration 'value' definition 'record_value'.
+param * record_find_param(record * record_value, char * id)
+                                   ^
+front/symtab.c:112:17: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+                printf("[PI][%s][%d]\n", param_value->id, entry->syn_level);
+                ^
+front/symtab.c:116:17: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+                printf("[PI][%s][%d]\n", param_value->id, entry->syn_level);
+                ^
+front/symtab.c:120:17: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+                printf("[PF][%s][%d]\n", param_value->id, entry->syn_level);
+                ^
+front/symtab.c:124:17: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+                printf("[PR][%s][%d]\n", param_value->id, entry->syn_level);
+                ^
+front/symtab.c:128:17: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+                printf("[PE][%s][%d]\n", param_value->id, entry->syn_level);
+                ^
+front/symtab.c:133:13: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+            printf("[PU][%s][%d]\n", entry->id, entry->syn_level);
+            ^
+front/symtab.c:138:9: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+        printf("[B][%s][%d]\n", entry->id, entry->syn_level);
+        ^
+front/symtab.c:142:9: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+        printf("[M][%s][%d]\n", entry->id, entry->syn_level);
+        ^
+front/symtab.c:146:9: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+        printf("[Q][%s][%d]\n", entry->id, entry->syn_level);
+        ^
+front/symtab.c:150:9: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+        printf("[R][%s][%d]\n", entry->id, entry->syn_level);
+        ^
+front/symtab.c:154:9: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+        printf("[I][%s][%d]\n", entry->id, entry->syn_level);
+        ^
+front/symtab.c:158:9: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+        printf("[E][%s][%d]\n", entry->id, entry->syn_level);
+        ^
+front/symtab.c:162:9: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+        printf("[F][%s][%d]\n", entry->id, entry->syn_level);
+        ^
+front/symtab.c:41:64: style:inconclusive: Function 'symtab_entry_add_object' argument 5 names different: declaration 'param_func_value' definition 'object_value'. [funcArgNamesDifferent]
+                             int type, const char * id, void * object_value,
+                                                               ^
+front/symtab.h:96:64: note: Function 'symtab_entry_add_object' argument 5 names different: declaration 'param_func_value' definition 'object_value'.
+                             int type, const char * id, void * param_func_value,
+                                                               ^
+front/symtab.c:41:64: note: Function 'symtab_entry_add_object' argument 5 names different: declaration 'param_func_value' definition 'object_value'.
+                             int type, const char * id, void * object_value,
+                                                               ^
+front/symtab.c:239:43: style:inconclusive: Function 'symtab_add_bind' argument 2 names different: declaration 'let_value' definition 'bind_value'. [funcArgNamesDifferent]
+void symtab_add_bind(symtab * tab, bind * bind_value, unsigned int syn_level)
+                                          ^
+front/symtab.h:110:43: note: Function 'symtab_add_bind' argument 2 names different: declaration 'let_value' definition 'bind_value'.
+void symtab_add_bind(symtab * tab, bind * let_value, unsigned int syn_level);
+                                          ^
+front/symtab.c:239:43: note: Function 'symtab_add_bind' argument 2 names different: declaration 'let_value' definition 'bind_value'.
+void symtab_add_bind(symtab * tab, bind * bind_value, unsigned int syn_level)
+                                          ^
+front/tailrec.c:572:18: style: The scope of the variable 'syn_level' can be reduced. [variableScope]
+    unsigned int syn_level = 0;
+                 ^
+front/tailrec.c:316:33: style:inconclusive: Function 'seq_item_tailrec' argument 3 names different: declaration 'list' definition 'value'. [funcArgNamesDifferent]
+                     seq_item * value, tailrec_op op)
+                                ^
+front/tailrec.h:50:33: note: Function 'seq_item_tailrec' argument 3 names different: declaration 'list' definition 'value'.
+                     seq_item * list, tailrec_op op);
+                                ^
+front/tailrec.c:316:33: note: Function 'seq_item_tailrec' argument 3 names different: declaration 'list' definition 'value'.
+                     seq_item * value, tailrec_op op)
+                                ^
+front/tcmatch.c:464:22: style: Condition 'list==NULL' is always false [knownConditionTrueFalse]
+            if (list == NULL)
+                     ^
+front/tcmatch.c:461:53: note: Assuming that condition 'enum_value->enums!=NULL' is not redundant
+        if (enum_value != NULL && enum_value->enums != NULL)
+                                                    ^
+front/tcmatch.c:463:48: note: Assignment 'list=enum_value->enums', assigned value is 0
+            enumerator_list * list = enum_value->enums;
+                                               ^
+front/tcmatch.c:464:22: note: Condition 'list==NULL' is always false
+            if (list == NULL)
+                     ^
+front/tcmatch.c:177:75: style:inconclusive: Function 'expr_match_guard_record_check_type' argument 2 names different: declaration 'guard_item' definition 'guard_record'. [funcArgNamesDifferent]
+int expr_match_guard_record_check_type(symtab * tab, match_guard_record * guard_record,
+                                                                          ^
+front/tcmatch.h:42:75: note: Function 'expr_match_guard_record_check_type' argument 2 names different: declaration 'guard_item' definition 'guard_record'.
+int expr_match_guard_record_check_type(symtab * tab, match_guard_record * guard_item,
+                                                                          ^
+front/tcmatch.c:177:75: note: Function 'expr_match_guard_record_check_type' argument 2 names different: declaration 'guard_item' definition 'guard_record'.
+int expr_match_guard_record_check_type(symtab * tab, match_guard_record * guard_record,
+                                                                          ^
+front/typecheck.c:1147:17: style: Condition 'params!=NULL' is always true [knownConditionTrueFalse]
+    if ((params != NULL && (list_one == NULL && list_two == NULL)) ||
+                ^
+front/typecheck.c:1142:16: note: Assuming that condition 'params==NULL' is not redundant
+    if (params == NULL || params->tail == NULL)
+               ^
+front/typecheck.c:1147:17: note: Condition 'params!=NULL' is always true
+    if ((params != NULL && (list_one == NULL && list_two == NULL)) ||
+                ^
+front/typecheck.c:1148:17: style: Condition 'params==NULL' is always false [knownConditionTrueFalse]
+        (params == NULL && (list_one != NULL || list_two != NULL)))
+                ^
+front/typecheck.c:1142:16: note: Assuming that condition 'params==NULL' is not redundant
+    if (params == NULL || params->tail == NULL)
+               ^
+front/typecheck.c:1148:17: note: Condition 'params==NULL' is always false
+        (params == NULL && (list_one != NULL || list_two != NULL)))
+                ^
+front/typecheck.c:3033:101: style: Condition 'expr_ref!=NULL' is always true [knownConditionTrueFalse]
+                print_error_msg(value->line_no, "touples index not proper its type is %s", expr_ref != NULL ? expr_type_str(expr_ref->type) : "unknown");
+                                                                                                    ^
+front/typecheck.c:2977:22: note: Assuming that condition 'expr_ref!=NULL' is not redundant
+        if (expr_ref != NULL &&
+                     ^
+front/typecheck.c:3033:101: note: Condition 'expr_ref!=NULL' is always true
+                print_error_msg(value->line_no, "touples index not proper its type is %s", expr_ref != NULL ? expr_type_str(expr_ref->type) : "unknown");
+                                                                                                    ^
+front/typecheck.c:3658:20: warning: Either the condition 'value->attr.record_value!=NULL' is redundant or there is possible null pointer dereference: value->attr.record_value. [nullPointerRedundantCheck]
+    if (value->attr.record_value->comb.comb == COMB_TYPE_RECORD ||
+                   ^
+front/typecheck.c:3653:34: note: Assuming that condition 'value->attr.record_value!=NULL' is not redundant
+    if (value->attr.record_value != NULL)
+                                 ^
+front/typecheck.c:3658:20: note: Null pointer dereference
+    if (value->attr.record_value->comb.comb == COMB_TYPE_RECORD ||
+                   ^
+front/typecheck.c:4869:18: style: The scope of the variable 'syn_level' can be reduced. [variableScope]
+    unsigned int syn_level = 0;
+                 ^
+front/typecheck.c:4486:46: style:inconclusive: Function 'never_add_record' argument 2 names different: declaration 'value' definition 'record_value'. [funcArgNamesDifferent]
+int never_add_record(symtab * stab, record * record_value, int * result)
+                                             ^
+front/typecheck.h:191:46: note: Function 'never_add_record' argument 2 names different: declaration 'value' definition 'record_value'.
+int never_add_record(symtab * stab, record * value, int * result);
+                                             ^
+front/typecheck.c:4486:46: note: Function 'never_add_record' argument 2 names different: declaration 'value' definition 'record_value'.
+int never_add_record(symtab * stab, record * record_value, int * result)
+                                             ^
+front/typecheck.c:4914:42: style:inconclusive: Function 'module_decl_check_type' argument 1 names different: declaration 'modules_modules' definition 'module_modules'. [funcArgNamesDifferent]
+int module_decl_check_type(module_decl * module_modules, module_decl * module_stdlib, module_decl * value, int * result)
+                                         ^
+front/typecheck.h:221:42: note: Function 'module_decl_check_type' argument 1 names different: declaration 'modules_modules' definition 'module_modules'.
+int module_decl_check_type(module_decl * modules_modules, module_decl * module_stdlib, module_decl * value, int * result);
+                                         ^
+front/typecheck.c:4914:42: note: Function 'module_decl_check_type' argument 1 names different: declaration 'modules_modules' definition 'module_modules'.
+int module_decl_check_type(module_decl * module_modules, module_decl * module_stdlib, module_decl * value, int * result)
+                                         ^
+front/typecheck.c:1121:16: style: Local variable 'expr_value' shadows outer argument [shadowArgument]
+        expr * expr_value = expr_node->value;
+               ^
+front/typecheck.c:1082:63: note: Shadowed declaration
+int param_list_expr_expr_list_cmp(param_list * params, expr * expr_value, expr_list * list, bool const_cmp)
+                                                              ^
+front/typecheck.c:1121:16: note: Shadow variable
+        expr * expr_value = expr_node->value;
+               ^
+front/typecheck.c:4042:24: style: Local variable 'func_value' shadows outer argument [shadowArgument]
+                func * func_value = node->value->func_value;
+                       ^
+front/typecheck.c:4017:63: note: Shadowed declaration
+int seq_list_check_type(symtab * tab, seq_list * list, func * func_value, unsigned syn_level,
+                                                              ^
+front/typecheck.c:4042:24: note: Shadow variable
+                func * func_value = node->value->func_value;
+                       ^
+test/test_exec.c:46:9: warning: %lu in format string (no. 2) requires 'unsigned long' but the argument type is 'signed long'. [invalidPrintfArgType_uint]
+        fprintf(stderr, "could not read the while file %s expected %lu read %lu\n",
+        ^
+test/test_exec.c:46:9: portability: %lu in format string (no. 3) requires 'unsigned long' but the argument type is 'size_t {aka unsigned long}'. [invalidPrintfArgType_uint]
+        fprintf(stderr, "could not read the while file %s expected %lu read %lu\n",
+        ^
+test/test_exec.c:193:13: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+            printf("[%d/%d] path: %s\nprog_str: %s\n", current, count, samplepath, prog_str);
+            ^
+test/test_exec.c:193:13: warning: %d in format string (no. 2) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+            printf("[%d/%d] path: %s\nprog_str: %s\n", current, count, samplepath, prog_str);
+            ^
+test/test_exec.c:231:18: style: The scope of the variable 'current' can be reduced. [variableScope]
+    unsigned int current = 0;
+                 ^
+test/test_exec.c:85:20: style: Variable 'param2' is assigned a value that is never used. [unreadVariable]
+        int param2 = 1;
+                   ^
+front/array.c:25:0: style: The function 'array_new' is never used. [unusedFunction]
+
+^
+front/array.c:51:0: style: The function 'array_new_dims' is never used. [unusedFunction]
+
+^
+front/array.c:38:0: style: The function 'array_new_sub' is never used. [unusedFunction]
+
+^
+front/bind.c:26:0: style: The function 'bind_new_let' is never used. [unusedFunction]
+
+^
+front/bind.c:39:0: style: The function 'bind_new_var' is never used. [unusedFunction]
+
+^
+back/bytecode.c:1553:0: style: The function 'bytecode_array_print' is never used. [unusedFunction]
+
+^
+front/expr.c:562:0: style: The function 'comb_type_is_basic' is never used. [unusedFunction]
+
+^
+front/decl.c:111:0: style: The function 'decl_list_add_beg' is never used. [unusedFunction]
+
+^
+front/decl.c:127:0: style: The function 'decl_list_add_end' is never used. [unusedFunction]
+
+^
+front/decl.c:88:0: style: The function 'decl_list_new' is never used. [unusedFunction]
+
+^
+front/decl.c:27:0: style: The function 'decl_new_enumtype' is never used. [unusedFunction]
+
+^
+front/decl.c:37:0: style: The function 'decl_new_record' is never used. [unusedFunction]
+
+^
+front/dim.c:89:0: style: The function 'dim_list_add_beg' is never used. [unusedFunction]
+
+^
+front/dim.c:106:0: style: The function 'dim_list_add_end' is never used. [unusedFunction]
+
+^
+front/dim.c:76:0: style: The function 'dim_list_delete' is never used. [unusedFunction]
+
+^
+front/dim.c:65:0: style: The function 'dim_list_new' is never used. [unusedFunction]
+
+^
+front/dim.c:26:0: style: The function 'dim_new' is never used. [unusedFunction]
+
+^
+back/dlcache.c:195:0: style: The function 'dlcache_print' is never used. [unusedFunction]
+
+^
+back/dltab.c:147:0: style: The function 'dltab_add_lib' is never used. [unusedFunction]
+
+^
+back/dltab.c:123:0: style: The function 'dltab_delete' is never used. [unusedFunction]
+
+^
+back/dltab.c:155:0: style: The function 'dltab_lookup_lib' is never used. [unusedFunction]
+
+^
+back/dltab.c:112:0: style: The function 'dltab_new' is never used. [unusedFunction]
+
+^
+front/enumerator.c:141:0: style: The function 'enumerator_list_add_beg' is never used. [unusedFunction]
+
+^
+front/enumerator.c:157:0: style: The function 'enumerator_list_add_end' is never used. [unusedFunction]
+
+^
+front/enumerator.c:118:0: style: The function 'enumerator_list_new' is never used. [unusedFunction]
+
+^
+front/enumerator.c:27:0: style: The function 'enumerator_new' is never used. [unusedFunction]
+
+^
+front/enumerator.c:42:0: style: The function 'enumerator_new_expr' is never used. [unusedFunction]
+
+^
+front/enumerator.c:57:0: style: The function 'enumerator_new_record' is never used. [unusedFunction]
+
+^
+front/enums.c:29:0: style: The function 'enumtype_new' is never used. [unusedFunction]
+
+^
+front/except.c:108:0: style: The function 'except_list_add_beg' is never used. [unusedFunction]
+
+^
+front/except.c:125:0: style: The function 'except_list_add_end' is never used. [unusedFunction]
+
+^
+front/except.c:84:0: style: The function 'except_list_new' is never used. [unusedFunction]
+
+^
+front/except.c:25:0: style: The function 'except_new_all' is never used. [unusedFunction]
+
+^
+front/except.c:38:0: style: The function 'except_new_id' is never used. [unusedFunction]
+
+^
+front/expr.c:240:0: style: The function 'expr_new_array' is never used. [unusedFunction]
+
+^
+front/expr.c:256:0: style: The function 'expr_new_array_deref' is never used. [unusedFunction]
+
+^
+front/expr.c:376:0: style: The function 'expr_new_ass' is never used. [unusedFunction]
+
+^
+front/expr.c:495:0: style: The function 'expr_new_attr' is never used. [unusedFunction]
+
+^
+front/expr.c:36:0: style: The function 'expr_new_bool' is never used. [unusedFunction]
+
+^
+front/expr.c:179:0: style: The function 'expr_new_c_null' is never used. [unusedFunction]
+
+^
+front/expr.c:345:0: style: The function 'expr_new_call' is never used. [unusedFunction]
+
+^
+front/expr.c:78:0: style: The function 'expr_new_char' is never used. [unusedFunction]
+
+^
+front/expr.c:406:0: style: The function 'expr_new_do_while' is never used. [unusedFunction]
+
+^
+front/expr.c:106:0: style: The function 'expr_new_double' is never used. [unusedFunction]
+
+^
+front/expr.c:92:0: style: The function 'expr_new_float' is never used. [unusedFunction]
+
+^
+front/expr.c:421:0: style: The function 'expr_new_for' is never used. [unusedFunction]
+
+^
+front/expr.c:438:0: style: The function 'expr_new_for_in' is never used. [unusedFunction]
+
+^
+front/expr.c:331:0: style: The function 'expr_new_func' is never used. [unusedFunction]
+
+^
+front/expr.c:452:0: style: The function 'expr_new_iflet' is never used. [unusedFunction]
+
+^
+front/expr.c:481:0: style: The function 'expr_new_listcomp' is never used. [unusedFunction]
+
+^
+front/expr.c:64:0: style: The function 'expr_new_long' is never used. [unusedFunction]
+
+^
+front/expr.c:466:0: style: The function 'expr_new_match' is never used. [unusedFunction]
+
+^
+front/expr.c:166:0: style: The function 'expr_new_nil' is never used. [unusedFunction]
+
+^
+front/expr.c:192:0: style: The function 'expr_new_one' is never used. [unusedFunction]
+
+^
+front/expr.c:286:0: style: The function 'expr_new_range' is never used. [unusedFunction]
+
+^
+front/expr.c:271:0: style: The function 'expr_new_range_dim' is never used. [unusedFunction]
+
+^
+front/expr.c:302:0: style: The function 'expr_new_slice' is never used. [unusedFunction]
+
+^
+front/expr.c:120:0: style: The function 'expr_new_string' is never used. [unusedFunction]
+
+^
+front/expr.c:224:0: style: The function 'expr_new_three' is never used. [unusedFunction]
+
+^
+front/expr.c:510:0: style: The function 'expr_new_touple' is never used. [unusedFunction]
+
+^
+front/expr.c:391:0: style: The function 'expr_new_while' is never used. [unusedFunction]
+
+^
+back/fficall.c:162:0: style: The function 'ffi_decl_close_handle' is never used. [unusedFunction]
+
+^
+test/test_ffi.c:71:0: style: The function 'fire' is never used. [unusedFunction]
+
+^
+front/freevar.c:111:0: style: The function 'freevar_list_add_beg' is never used. [unusedFunction]
+
+^
+front/func.c:182:0: style: The function 'func_body_new' is never used. [unusedFunction]
+
+^
+front/func.c:159:0: style: The function 'func_except_new' is never used. [unusedFunction]
+
+^
+front/func.c:52:0: style: The function 'func_new_ffi' is never used. [unusedFunction]
+
+^
+back/gc.c:786:0: style: The function 'gc_object_print' is never used. [unusedFunction]
+
+^
+back/gc.c:509:0: style: The function 'gc_set_string' is never used. [unusedFunction]
+
+^
+back/gc.c:761:0: style: The function 'gc_stack_print' is never used. [unusedFunction]
+
+^
+test/test_ffi.c:68:0: style: The function 'get_x' is never used. [unusedFunction]
+
+^
+test/test_ffi.c:69:0: style: The function 'get_y' is never used. [unusedFunction]
+
+^
+test/test_ffi.c:58:0: style: The function 'go_ahead' is never used. [unusedFunction]
+
+^
+front/iflet.c:29:0: style: The function 'iflet_item_new' is never used. [unusedFunction]
+
+^
+front/iflet.c:44:0: style: The function 'iflet_record_new' is never used. [unusedFunction]
+
+^
+front/libmath.c:591:0: style: The function 'libmath_add_funcs_module_decl' is never used. [unusedFunction]
+
+^
+front/listcomp.c:159:0: style: The function 'listcomp_new' is never used. [unusedFunction]
+
+^
+front/match.c:28:0: style: The function 'match_guard_item_new' is never used. [unusedFunction]
+
+^
+front/match.c:42:0: style: The function 'match_guard_item_new_module' is never used. [unusedFunction]
+
+^
+front/match.c:263:0: style: The function 'match_guard_list_add_beg' is never used. [unusedFunction]
+
+^
+front/match.c:280:0: style: The function 'match_guard_list_add_end' is never used. [unusedFunction]
+
+^
+front/match.c:297:0: style: The function 'match_guard_list_is_first' is never used. [unusedFunction]
+
+^
+front/match.c:307:0: style: The function 'match_guard_list_is_last' is never used. [unusedFunction]
+
+^
+front/match.c:239:0: style: The function 'match_guard_list_new' is never used. [unusedFunction]
+
+^
+front/match.c:154:0: style: The function 'match_guard_new_else' is never used. [unusedFunction]
+
+^
+front/match.c:130:0: style: The function 'match_guard_new_item' is never used. [unusedFunction]
+
+^
+front/match.c:142:0: style: The function 'match_guard_new_record' is never used. [unusedFunction]
+
+^
+front/match.c:73:0: style: The function 'match_guard_record_new' is never used. [unusedFunction]
+
+^
+front/match.c:89:0: style: The function 'match_guard_record_new_module' is never used. [unusedFunction]
+
+^
+front/match.c:317:0: style: The function 'match_guard_type_str' is never used. [unusedFunction]
+
+^
+front/matchbind.c:100:0: style: The function 'matchbind_list_add_beg' is never used. [unusedFunction]
+
+^
+front/matchbind.c:118:0: style: The function 'matchbind_list_add_end' is never used. [unusedFunction]
+
+^
+front/matchbind.c:76:0: style: The function 'matchbind_list_new' is never used. [unusedFunction]
+
+^
+front/matchbind.c:26:0: style: The function 'matchbind_new' is never used. [unusedFunction]
+
+^
+front/module_decl.c:83:0: style: The function 'module_decl_print' is never used. [unusedFunction]
+
+^
+back/module.c:92:0: style: The function 'module_print' is never used. [unusedFunction]
+
+^
+back/nev.c:172:0: style: The function 'nev_compile_file' is never used. [unusedFunction]
+
+^
+back/object.c:30:0: style: The function 'object_new' is never used. [unusedFunction]
+
+^
+front/param.c:595:0: style: The function 'param_list_add_beg' is never used. [unusedFunction]
+
+^
+front/param.c:629:0: style: The function 'param_list_find' is never used. [unusedFunction]
+
+^
+front/param.c:701:0: style: The function 'param_list_print' is never used. [unusedFunction]
+
+^
+front/param.c:162:0: style: The function 'param_new_array' is never used. [unusedFunction]
+
+^
+front/param.c:147:0: style: The function 'param_new_dim' is never used. [unusedFunction]
+
+^
+front/param.c:268:0: style: The function 'param_new_func' is never used. [unusedFunction]
+
+^
+front/param.c:182:0: style: The function 'param_new_range' is never used. [unusedFunction]
+
+^
+front/param.c:203:0: style: The function 'param_new_range_dim' is never used. [unusedFunction]
+
+^
+front/param.c:236:0: style: The function 'param_new_record' is never used. [unusedFunction]
+
+^
+front/param.c:252:0: style: The function 'param_new_record_module' is never used. [unusedFunction]
+
+^
+front/param.c:216:0: style: The function 'param_new_slice' is never used. [unusedFunction]
+
+^
+front/param.c:283:0: style: The function 'param_new_touple' is never used. [unusedFunction]
+
+^
+front/param.c:121:0: style: The function 'param_new_void' is never used. [unusedFunction]
+
+^
+front/tcprint.c:515:0: style: The function 'print_functions' is never used. [unusedFunction]
+
+^
+front/listcomp.c:127:0: style: The function 'qualifier_list_add_beg' is never used. [unusedFunction]
+
+^
+front/listcomp.c:143:0: style: The function 'qualifier_list_add_end' is never used. [unusedFunction]
+
+^
+front/listcomp.c:104:0: style: The function 'qualifier_list_new' is never used. [unusedFunction]
+
+^
+front/listcomp.c:21:0: style: The function 'qualifier_new_filter' is never used. [unusedFunction]
+
+^
+front/listcomp.c:8:0: style: The function 'qualifier_new_generator' is never used. [unusedFunction]
+
+^
+front/range.c:94:0: style: The function 'range_list_add_beg' is never used. [unusedFunction]
+
+^
+front/range.c:112:0: style: The function 'range_list_add_end' is never used. [unusedFunction]
+
+^
+front/range.c:70:0: style: The function 'range_list_new' is never used. [unusedFunction]
+
+^
+front/range.c:26:0: style: The function 'range_new' is never used. [unusedFunction]
+
+^
+front/record.c:28:0: style: The function 'record_new' is never used. [unusedFunction]
+
+^
+front/seq.c:29:0: style: The function 'seq_item_new_bind' is never used. [unusedFunction]
+
+^
+front/seq.c:51:0: style: The function 'seq_item_new_expr' is never used. [unusedFunction]
+
+^
+front/seq.c:170:0: style: The function 'seq_list_add_beg' is never used. [unusedFunction]
+
+^
+front/typecheck.c:4071:0: style: The function 'seq_list_top_check_type' is never used. [unusedFunction]
+
+^
+front/seq.c:134:0: style: The function 'seq_new' is never used. [unusedFunction]
+
+^
+front/strutil.c:50:0: style: The function 'string_take' is never used. [unusedFunction]
+
+^
+front/symtab.c:357:0: style: The function 'symtab_for_all' is never used. [unusedFunction]
+
+^
+back/fficall.c:216:0: style: The function 'test_conc_int_str' is never used. [unusedFunction]
+
+^
+back/fficall.c:207:0: style: The function 'test_conc_str' is never used. [unusedFunction]
+
+^
+back/fficall.c:200:0: style: The function 'test_print_str' is never used. [unusedFunction]
+
+^
+back/fficall.c:225:0: style: The function 'test_rect' is never used. [unusedFunction]
+
+^
+back/fficall.c:282:0: style: The function 'test_types_call' is never used. [unusedFunction]
+
+^
+back/fficall.c:344:0: style: The function 'test_types_check_int' is never used. [unusedFunction]
+
+^
+back/fficall.c:265:0: style: The function 'test_types_get_char' is never used. [unusedFunction]
+
+^
+back/fficall.c:260:0: style: The function 'test_types_get_double' is never used. [unusedFunction]
+
+^
+back/fficall.c:255:0: style: The function 'test_types_get_float' is never used. [unusedFunction]
+
+^
+back/fficall.c:245:0: style: The function 'test_types_get_int' is never used. [unusedFunction]
+
+^
+back/fficall.c:250:0: style: The function 'test_types_get_long' is never used. [unusedFunction]
+
+^
+back/fficall.c:277:0: style: The function 'test_types_get_ptr' is never used. [unusedFunction]
+
+^
+back/fficall.c:349:0: style: The function 'test_types_get_rec' is never used. [unusedFunction]
+
+^
+back/fficall.c:270:0: style: The function 'test_types_get_string' is never used. [unusedFunction]
+
+^
+back/fficall.c:369:0: style: The function 'test_types_get_touple' is never used. [unusedFunction]
+
+^
+back/fficall.c:309:0: style: The function 'test_types_ptr' is never used. [unusedFunction]
+
+^
+back/fficall.c:328:0: style: The function 'test_types_struct_ptr' is never used. [unusedFunction]
+
+^
+back/fficall.c:234:0: style: The function 'test_void' is never used. [unusedFunction]
+
+^
+back/fficall.c:239:0: style: The function 'test_void_call' is never used. [unusedFunction]
+
+^
+front/touple.c:25:0: style: The function 'touple_new' is never used. [unusedFunction]
+
+^
+test/test_ffi.c:46:0: style: The function 'turn_left' is never used. [unusedFunction]
+
+^
+test/test_ffi.c:52:0: style: The function 'turn_right' is never used. [unusedFunction]
+
+^
+front/use.c:103:0: style: The function 'use_list_add_beg' is never used. [unusedFunction]
+
+^
+front/use.c:137:0: style: The function 'use_list_print' is never used. [unusedFunction]
+
+^
+back/vmexec.c:1258:0: style: The function 'vm_execute_op_not_long' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
